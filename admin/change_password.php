@@ -1,4 +1,4 @@
-<?php
+?php
 session_start();
 include "validation/login_check.php";
 include "dbcon.php";
