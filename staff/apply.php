@@ -162,6 +162,9 @@ echo "not staff";
                 </div>
               </div>
             </div>
+            <div id="relativeSection">
+
+            </div>
 
             <!-- copy of relative blocks -->
             <div class="row col-md-12 relativeBlockCopy" style="display:none;">
@@ -195,6 +198,9 @@ echo "not staff";
     </div>
   </div>
 </div>
+<div id="relativeSection">
+
+</div>
 
     <div class="col-md-12 text-center">
       <input type="submit"  value="Apply" class="btn btn-lg btn-primary" name="apply">
@@ -222,11 +228,12 @@ function GetDays(){
       //group add limit
       var maxGroup = 4;
 
-      //add more fields group
       $(".addMore").click(function(){
           if($('body').find('.relativeBlock').length < maxGroup){
+              $('#relativeSection').html('');
               var fieldHTML = '<div class="row col-md-12 form-group relativeBlock">'+$(".relativeBlockCopy").html()+'</div>';
-              $('body').find('.relativeBlock:last').after(fieldHTML);
+              // $('body').find('.relativeBlock:last').after(fieldHTML);
+               $('#relativeSection').append(fieldHTML);
           }else{
               alert('Maximum '+maxGroup+' relatives are allowed.');
           }

@@ -21,7 +21,7 @@ $total_staff_results = $connect->query($get_total_staff);
 $total_staff = $total_staff_results->fetch_array();
 //
 // //STAFF ON LEAVE
-$get_staff_on_leave = "SELECT COUNT(*) AS staff_on_leave FROM leave_requests WHERE leave_status = 'accepted' ";
+$get_staff_on_leave = "SELECT COUNT(*) AS staff_on_leave FROM leave_requests WHERE leave_status = 'dvc-accept' ";
 $total_staff_on_leave = $connect->query($get_staff_on_leave);
 $staff_on_leave = $total_staff_on_leave->fetch_array();
 

@@ -65,7 +65,7 @@ if($fetch_results = $connect->query($fetch_staff)){
                   <!-- .card-body -->
                   <div class="card-body">
                     <?php
-                    $fetch_staff = "SELECT * FROM leave_requests INNER JOIN staff ON staff_id = staff_id_fk WHERE leave_status = 'hod-accept' ";
+                    $fetch_staff = "SELECT * FROM leave_requests INNER JOIN staff ON staff_id = staff_id_fk WHERE leave_status = 'principal-accept' ";
                     if($fetch_results = $connect->query($fetch_staff)){
                       if($fetch_results->num_rows > 0){
                         echo   '<table id="dt-hod"  class="table dt-responsive nowrap w-100">';

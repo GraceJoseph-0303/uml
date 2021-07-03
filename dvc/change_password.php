@@ -73,7 +73,7 @@ if($fetch_results = $connect->query($fetch_staff)){
                       unset($_SESSION['success']);
                     }
                     ?>
-                    <form class="from-control" action="validation/change_password.php" method="post">
+                    <form class="from-control" action="validation/change_password2.php" method="post">
                       <div class="row col-md-12">
                         <div class="col-md-6">
                             <label for="">Old Password</label>

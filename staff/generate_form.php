@@ -13,6 +13,7 @@ $end_date = $row['end_date'];
 $destination = $row['destination'];
 $bio = $row['bio'];
 $no_of_days = $row['no_of_days'];
+$relative_name = $row['relative_name'];
 
 
 /*call the FPDF library*/
@@ -54,7 +55,8 @@ $pdf->Cell(400,5,$destination,0,1);
 $pdf->Cell(35 ,5,'DESC:',0,0);
 $pdf->Cell(400,5,$bio,0,1);
 
-
+$pdf->Cell(35 ,5,'RELATIVES:',0,0);
+$pdf->Cell(400,5,$relative_name,0,1);
 
 
 

@@ -13,7 +13,7 @@ $result = mysqli_query($connect,$query);
       $_SESSION['accepted'] = "
       <script>
       Swal.fire(
-  'FORWARED TO DVC',
+  'FORWARED TO FOR RESPONSE',
   '',
   'success'
 )
